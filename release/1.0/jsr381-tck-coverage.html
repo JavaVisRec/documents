@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head><title>JSR 381 Visual Recognition TCK Coverage Report</title>
+<style type="text/css">
+  body {
+   font-family: verdana, arial, sans-serif;
+   font-size: 11px; }
+  .code {
+    float: left;
+    font-weight: bold;
+    width: 50px;
+    margin-top: 0px;
+    height: 100%; }
+   a.external, a.external:visited, a.external:hover {
+    color: #0000ff;
+    font-size: 9px;
+    font-style: normal;
+    padding-left: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-right: 2px; }
+  .results {
+    margin-left: 50px; }
+  .description {
+    margin-top: 2px;
+    margin-bottom: 2px; }
+  .sectionHeader {
+    border-bottom: 1px solid #cccccc;
+    margin-top: 8px;
+    font-weight: bold; }
+  .packageName {
+    color: #999999;
+    font-size: 9px;
+    font-weight: bold; }
+  .groupName {
+    color: #0000FF;
+    font-size: 12px;
+    font-weight: bold; }
+  .embeddedImage {
+    margin: 6px;
+    border: 1px solid black;
+    float: right; }
+  .coverage {
+    clear: both; }
+  .noCoverage {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ff0000; }
+  .coverageHeader {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+  .coverageMethod {
+    font-style: italic; }
+  .highlight {
+    background-color: #ffff00; }
+  .literal {
+   font-family: courier new; }
+  .implied {
+    color: #fff;
+    font-weight: bold;
+    background-color: #000; }
+  .group {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+    min-height: 36px;
+    background-color: #eeeeee; }
+  .groupAssertions {
+    padding-bottom: 1px;
+    margin-top: 8px;
+    margin-left: 50px;
+    margin-bottom: 2px;
+    min-height: 36px; 
+    background-color: ffffff; }
+  .pass {
+    border-top: 1px solid #488c41;
+    border-bottom: 1px solid #488c41;
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+    min-height: 36px;
+    background-color: #ddffdd; }
+  .fail {
+    border-top: 1px solid #ab2020;
+    border-bottom: 1px solid #ab2020;
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+    min-height: 36px;
+    background-color: #ffdddd; }
+  .skip {
+    border-top: 1px solid #ff9900;
+    border-bottom: 1px solid #ff9900;
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+    min-height: 36px;
+    background-color: #ffcc33; }
+  .untestable {
+    padding-bottom: 16px;
+    margin-bottom: 2px;
+    border-top: 1px solid #317ba6;
+    border-bottom: 1px solid #317ba6;
+    min-height: 36px;
+    background-color: #80d1ff; }
+  .stickynote {
+    position: absolute;
+    left: 16px;
+    margin-top: 2em; }
+</style>
+</head><body><h1>JSR 381 Visual Recognition TCK Coverage</h1><h2>1.0.0</h2>
+<h3>Contents</h3>
+<div><a href="#chapterSummary">Chapter Summary</a></div>
+<div><a href="#sectionSummary">Section Summary</a></div>
+<div><a href="#coverageDetail">Coverage Detail</a></div>
+<div><a href="#unmatched">Unmatched Tests</a></div>
+<div><a href="#unversioned">Unversioned Tests</a></div>
+<div><a href="#groupsummary">Test Group Summary</a></div>
+<h3 id="coverageDistribution">Coverage Distribution</h3>
+<div style="width:170px;height:60px;border:1px solid #000000">
+  <div title="0,0% to 10,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#ff3333">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="10,0% to 20,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#e64031">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="20,0% to 30,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#ce4d2f">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="30,0% to 40,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#b55b2d">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="40,0% to 50,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#9d682b">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="50,0% to 60,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#84752a">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="60,0% to 70,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#6c8228">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="70,0% to 80,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#539026">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="80,0% to 90,0% coverage - 0 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#3b9d24">
+    <div style="background-color:#ffffff;height:60px">&nbsp;</div>
+  </div>
+  <div title="90,0% to 100,0% coverage - 4 sections" style="float:left;border-right:1px solid #eeeeee;width:16px;height:60px;background-color:#22aa22">
+    <div style="background-color:#ffffff;height:6px">&nbsp;</div>
+  </div>
+</div>
+<h3 id="chapterSummary">Chapter Summary</h3>
+<table width="100%">
+<tr style="background-color:#dddddd">
+  <th align="left">Chapter</th>
+  <th>Assertions</th>
+  <th>Testable</th>
+  <th>Total Tested</th>
+  <th>Total Tests</th>
+  <th>Tested<br /> (problematic)</th>
+  <th>Tested<br /> (working)</th>
+  <th>Coverage %</th>
+</tr>
+<tr style="background-color:#f7f7f7"><td style="padding-left:0px"><a href="#1">1 Introduction, Use Cases, Requirements (no tests)</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:0px"><a href="#2">2 Use Cases</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="background-color:#f7f7f7"><td style="padding-left:0px"><a href="#3">3 Requirements</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:0px"><a href="#4">4 Specification</a></td><td align="center">28</td><td align="center">28</td><td align="center">28</td><td align="center">28</td><td align="center">0</td><td align="center">28</td><td align="center" style="background-color:#aaffaa">100,00%</td></tr><tr style="background-color:#f7f7f7"><td style="padding-left:0px"><a href="#7">7 Examples</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="font-weight: bold;background-color:#dddddd"><td>Total</td><td align="center">28</td><td align="center">28</td><td align="center">28</td><td align="center">28</td><td align="center">0</td><td align="center">28</td><td align="center" style="background-color:#aaffaa">100,00%</td></tr></table><h3 id="sectionSummary">Section Summary</h3>
+<table width="100%"><tr style="background-color:#dddddd"><th align="left">Section</th><th>Assertions</th><th>Testable</th><th>Total Tested</th><th>Tested<br /> (problematic)</th><th>Tested<br /> (working)</th><th>Coverage %</th></tr><tr style="background-color:#f7f7f7"><td style="padding-left:0px"><a href="#1">1 Introduction, Use Cases, Requirements (no tests)</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:0px"><a href="#2">2 Use Cases</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="background-color:#f7f7f7"><td style="padding-left:0px"><a href="#3">3 Requirements</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:16px"><a href="#3.1">3.1 Core Requirements</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="background-color:#f7f7f7"><td style="padding-left:16px"><a href="#3.4">3.4 Non Functional Requirements</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:0px"><a href="#4">4 Specification</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="background-color:#f7f7f7"><td style="padding-left:16px"><a href="#4.1">4.1 Package and Project Structure</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:32px"><a href="#4.1.1">4.1.1 Package Overview</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="background-color:#f7f7f7"><td style="padding-left:32px"><a href="#4.1.2">4.1.2 Module/Repository Overview</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:16px"><a href="#4.2">4.2 Visual Recognition Core API</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="background-color:#f7f7f7"><td style="padding-left:32px"><a href="#4.2.1">4.2.1 Service Provider Usability</a></td><td align="center">10</td><td align="center">10</td><td align="center">10</td><td align="center">0</td><td align="center">10</td><td align="center" style="background-color:#aaffaa">100,00%</td></tr><tr><td style="padding-left:32px"><a href="#4.2.2">4.2.2 Classification</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="background-color:#f7f7f7"><td style="padding-left:48px"><a href="#4.2.2.1">4.2.2.1 Creation and Usage of the ImageClassifier</a></td><td align="center">8</td><td align="center">8</td><td align="center">8</td><td align="center">0</td><td align="center">8</td><td align="center" style="background-color:#aaffaa">100,00%</td></tr><tr><td style="padding-left:48px"><a href="#4.2.2.2">4.2.2.2 Creation and Usage of the BinaryClassifier</a></td><td align="center">4</td><td align="center">4</td><td align="center">4</td><td align="center">0</td><td align="center">4</td><td align="center" style="background-color:#aaffaa">100,00%</td></tr><tr style="background-color:#f7f7f7"><td style="padding-left:32px"><a href="#4.2.4">4.2.4 Regression</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:32px"><a href="#4.2.5">4.2.5 Evaluation</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr style="background-color:#f7f7f7"><td style="padding-left:32px"><a href="#4.2.6">4.2.6 Input to Image Transformation</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr><tr><td style="padding-left:48px"><a href="#4.2.6.1">4.2.6.1 ImageFactory Usability</a></td><td align="center">6</td><td align="center">6</td><td align="center">6</td><td align="center">0</td><td align="center">6</td><td align="center" style="background-color:#aaffaa">100,00%</td></tr><tr style="background-color:#f7f7f7"><td style="padding-left:0px"><a href="#7">7 Examples</a></td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td><td /></tr></table><h3 id="coverageDetail">Coverage Detail</h3>
+<table>
+  <tr><th style="background-color:#dddddd">Colour Key</th></tr>
+  <tr><td style="background-color:#ddffdd;text-align:center">Assertion is covered</td></tr>
+  <tr><td style="background-color:#ffdddd;text-align:center">Assertion is not covered</td></tr>
+  <tr><td style="background-color:#ffcc33;text-align:center">Assertion test is unimplemented</td></tr>
+  <tr><td style="background-color:#80d1ff;text-align:center">Assertion is untestable</td></tr>
+</table>
+<div style="visibility:hidden" id="1"></div>
+<div style="visibility:hidden" id="2"></div>
+<div style="visibility:hidden" id="3"></div>
+<div style="visibility:hidden" id="3.1"></div>
+<div style="visibility:hidden" id="3.4"></div>
+<div style="visibility:hidden" id="4"></div>
+<div style="visibility:hidden" id="4.1"></div>
+<div style="visibility:hidden" id="4.1.1"></div>
+<div style="visibility:hidden" id="4.1.2"></div>
+<div style="visibility:hidden" id="4.2"></div>
+<div id = "Service Provider Usability"><h4 class="sectionHeader" id="4.2.1">Section 4.2.1 - Service Provider Usability</h4>
+  <div class="group">
+    <p class="description">A. Accessing the Service Provider</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">421-A1)</span>
+    <div class="results"><p class="description">Ensure there's a minimum of a single implementation of the Service Provider</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: adfdec7083ab8758e5a2807d4ab5f4557e6881d7</div>        <div class="coverageMethod">ServiceProviderTest.testGetServiceProviderImpl()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+  <div class="group">
+    <p class="description">B. Obtain Services from the Service Provider</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">421-B2)</span>
+    <div class="results"><p class="description">Obtain the implementation of ClassifierService through the Service Provider</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: adfdec7083ab8758e5a2807d4ab5f4557e6881d7</div>        <div class="coverageMethod">ServiceProviderTest.testGetClassifierService()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">421-B3)</span>
+    <div class="results"><p class="description">Obtain the implementation of ImageFactoryService through the Service Provider</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: adfdec7083ab8758e5a2807d4ab5f4557e6881d7</div>        <div class="coverageMethod">ServiceProviderTest.testGetImplementationService()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">421-B4)</span>
+    <div class="results"><p class="description">Obtain the implementation of ImplementationService through the Service Provider</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: adfdec7083ab8758e5a2807d4ab5f4557e6881d7</div>        <div class="coverageMethod">ServiceProviderTest.testGetImageFactoryService()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+  <div class="group">
+    <p class="description">C. BuilderService (deprecated)</p>
+    <div class="groupAssertions">
+    </div>
+  </div>
+  <div class="group">
+    <p class="description">D. ClassifierService</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">421-D1)</span>
+    <div class="results"><p class="description">Must use the ImageClassifier.BuildingBlock to return an implemented and trained classification
+                    model as ImageClassifier.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: 9f1816c4a4e62d1322aa1336202cef1f8f7f952</div>        <div class="coverageMethod">ClassifierServiceTest.testCreateImageClassifier()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">421-D2)</span>
+    <div class="results"><p class="description">Must use the BinaryClassifier.BuildingBlock to return an implemented and trained classification
+                    model as BinaryClassifier.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: 9f1816c4a4e62d1322aa1336202cef1f8f7f952</div>        <div class="coverageMethod">ClassifierServiceTest.testCreateBinaryClassifier()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+  <div class="group">
+    <p class="description">E. ImageFactoryService</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">421-E1)</span>
+    <div class="results"><p class="description">Must be able to return an Optional after calling getByImageType(...)</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: 5d8e49dea267f12f9e45c6b4d26bc4359fd77e</div>        <div class="coverageMethod">ImageFactoryServiceTest.testGetOptionalImageFactory()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">421-E2)</span>
+    <div class="results"><p class="description">Must be able to return an implementation of the ImageFactory that is able to handle type of
+                    BufferedImage.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: 5d8e49dea267f12f9e45c6b4d26bc4359fd77e</div>        <div class="coverageMethod">ImageFactoryServiceTest.testGetBufferedImageImageFactory()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+  <div class="group">
+    <p class="description">F. ImplementationService</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">421-F1)</span>
+    <div class="results"><p class="description">Must be able to return the name of the implementation which may not be empty nor null.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: 703c91943971a2888542fcf6e926b6d6f71e3639</div>        <div class="coverageMethod">ImplementationServiceTest.testGetName()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">421-F2)</span>
+    <div class="results"><p class="description">Must be able to return the version of the implementation which may not be empty nor null.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests.spi        </div>
+<div class="description"> Test archive name: 703c91943971a2888542fcf6e926b6d6f71e3639</div>        <div class="coverageMethod">ImplementationServiceTest.testGetVersion()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+</div><div style="visibility:hidden" id="4.2.2"></div>
+<div id = "Creation and Usage of the ImageClassifier"><h4 class="sectionHeader" id="4.2.2.1">Section 4.2.2.1 - Creation and Usage of the ImageClassifier</h4>
+  <div class="group">
+    <p class="description">A. Building the ImageClassifier</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">4221-A1)</span>
+    <div class="results"><p class="description">Create an ImageClassifier using the building blocks in the builder design pattern.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 497ed67eeae533365dbd1bb74071f2ffe3305f78</div>        <div class="coverageMethod">ImageClassificationTest.testBuildWithBuildingBlock()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4221-A2)</span>
+    <div class="results"><p class="description">Create an ImageClassifier using a Map of configuration key-value which reflect to the methods
+                    of the building blocks.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 497ed67eeae533365dbd1bb74071f2ffe3305f78</div>        <div class="coverageMethod">ImageClassificationTest.testBuildWithMapConfiguration()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4221-A3)</span>
+    <div class="results"><p class="description">Creating an ImageClassifier using the Map of configuration key-value which contain invalid value
+                    types corresponding to the key. It must throw a InvalidBuilderConfigurationException.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 497ed67eeae533365dbd1bb74071f2ffe3305f78</div>        <div class="coverageMethod">ImageClassificationTest.testBuildWithMapConfigurationWithInvalidValueTypes()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+  <div class="group">
+    <p class="description">B. Using the ImageClassifier</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">4221-B1)</span>
+    <div class="results"><p class="description">Use a created ImageClassifier to classify MNIST and verify the output formation (not the
+                    accuracy). The key must
+                    be the label and the value must be the float of accuracy. Input must be a file
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 497ed67eeae533365dbd1bb74071f2ffe3305f78</div>        <div class="coverageMethod">ImageClassificationTest.testClassifyPartialMNIST()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4221-B2)</span>
+    <div class="results"><p class="description">Classify input using a InputStream object as input for the ImageClassifier.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 497ed67eeae533365dbd1bb74071f2ffe3305f78</div>        <div class="coverageMethod">ImageClassificationTest.testClassifyWithInputStreamAsInput()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4221-B3)</span>
+    <div class="results"><p class="description">Classify input using a BufferedImage object as input for the ImageClassifier.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 497ed67eeae533365dbd1bb74071f2ffe3305f78</div>        <div class="coverageMethod">ImageClassificationTest.testClassifyWithBufferedImageAsInput()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4221-B4)</span>
+    <div class="results"><p class="description">Attempt to classify input which is not an image and can't be transformed to a BufferedImage using
+                    a InputStream object as input.
+                    It must throw a ClassificationException.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 497ed67eeae533365dbd1bb74071f2ffe3305f78</div>        <div class="coverageMethod">ImageClassificationTest.testClassifyWithInvalidInputAsInputStreamInput()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4221-B5)</span>
+    <div class="results"><p class="description">Attempt to classify input which is not an image and can't be transformed to a BufferedImage using
+                    a Path object as input.
+                    It must throw a ClassificationException.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 497ed67eeae533365dbd1bb74071f2ffe3305f78</div>        <div class="coverageMethod">ImageClassificationTest.testClassifyWithInvalidInputAsPathInput()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+</div><div id = "Creation and Usage of the BinaryClassifier"><h4 class="sectionHeader" id="4.2.2.2">Section 4.2.2.2 - Creation and Usage of the BinaryClassifier</h4>
+  <div class="group">
+    <p class="description">A. Building the BinaryClassifier</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">4222-A1)</span>
+    <div class="results"><p class="description">Create a BinaryClassifier using the building blocks in the builder design pattern.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 32cf1c33c5fdc8719171835f4c5891816fc9718</div>        <div class="coverageMethod">BinaryClassificationTest.testBuildWithBuildingBlock()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4222-A2)</span>
+    <div class="results"><p class="description">Create an BinaryClassifier using a Map of configuration key-value which reflect to the methods
+                    of the building blocks.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 32cf1c33c5fdc8719171835f4c5891816fc9718</div>        <div class="coverageMethod">BinaryClassificationTest.testBuildWithMapConfiguration()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4222-A3)</span>
+    <div class="results"><p class="description">Creating a BinaryClassifier using the Map of configuration key-value which contain invalid value
+                    types corresponding to the key. It must throw a InvalidBuilderConfigurationException.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 32cf1c33c5fdc8719171835f4c5891816fc9718</div>        <div class="coverageMethod">BinaryClassificationTest.testBuildWithMapConfigurationWithInvalidValueTypes()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+  <div class="group">
+    <p class="description">B. Using the BinaryClassifier</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">4222-B1)</span>
+    <div class="results"><p class="description">Use a created BinaryClassifier to classify SPAM and verify the output. The output must either
+                    return true or false.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 32cf1c33c5fdc8719171835f4c5891816fc9718</div>        <div class="coverageMethod">BinaryClassificationTest.testClassifySpam()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+</div><div style="visibility:hidden" id="4.2.4"></div>
+<div style="visibility:hidden" id="4.2.5"></div>
+<div style="visibility:hidden" id="4.2.6"></div>
+<div id = "ImageFactory Usability"><h4 class="sectionHeader" id="4.2.6.1">Section 4.2.6.1 - ImageFactory Usability</h4>
+  <div class="group">
+    <p class="description">A. Create output using ImageFactory implementations</p>
+    <div class="groupAssertions">
+  <div class="pass">
+    <span class="code">4261-A1)</span>
+    <div class="results"><p class="description">Each implementation must be able to return non-null output using a Path object as input.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 1cdaa13a93cc08af7f0a4d5d729327594a98a56</div>        <div class="coverageMethod">ImageFactoryTest.testGetImageWithPathAsInput()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4261-A2)</span>
+    <div class="results"><p class="description">Each implementation must be able to return non-null output using an InputStream object as input.
+                </p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 1cdaa13a93cc08af7f0a4d5d729327594a98a56</div>        <div class="coverageMethod">ImageFactoryTest.testGetImageWithInputStreamAsInput()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4261-A3)</span>
+    <div class="results"><p class="description">Each implementation must be able to return non-null output using a URL object as input.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 1cdaa13a93cc08af7f0a4d5d729327594a98a56</div>        <div class="coverageMethod">ImageFactoryTest.testGetImageWithURLAsInput()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4261-A4)</span>
+    <div class="results"><p class="description">Each implementation must throw an IOException if the Path input is not an image.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 1cdaa13a93cc08af7f0a4d5d729327594a98a56</div>        <div class="coverageMethod">ImageFactoryTest.testGetImageWithInvalidFileInput()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4261-A5)</span>
+    <div class="results"><p class="description">Each implementation must throw an IOException if the InputStream input is not an image.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 1cdaa13a93cc08af7f0a4d5d729327594a98a56</div>        <div class="coverageMethod">ImageFactoryTest.testGetImageWithInvalidInputStreamInput()</div>
+    </div>
+</div></div>
+  <div class="pass">
+    <span class="code">4261-A6)</span>
+    <div class="results"><p class="description">Each implementation must throw an IOException if the URL input is not an image.</p>
+    <div class="coverage">
+      <p class="coverageHeader">Coverage</p>
+        <div class="packageName">jsr381.tck.tests        </div>
+<div class="description"> Test archive name: 1cdaa13a93cc08af7f0a4d5d729327594a98a56</div>        <div class="coverageMethod">ImageFactoryTest.testGetImageWithInvalidURLInput()</div>
+    </div>
+</div></div>
+    </div>
+  </div>
+</div><div style="visibility:hidden" id="7"></div>
+</table></body></html>

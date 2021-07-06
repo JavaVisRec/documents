@@ -1,0 +1,44 @@
+********************************************************************************
+**** JSR 381 - Visual Recognition, Technical Compatibility Kit, version 1.0
+********************************************************************************
+
+Executed on Tue Jul 06 19:26:22 CEST 2021
+
+[SUCCESS] 4.2.1 Obtain the implementation of ClassifierService through the Service Provider.(ServiceProviderTest#testGetClassifierService)
+[SUCCESS] 4.2.1 Obtain the implementation of ImageFactoryService through the Service Provider.(ServiceProviderTest#testGetImageFactoryService)
+[SUCCESS] 4.2.1 Obtain the implementation of ImplementationService through the Service Provider.(ServiceProviderTest#testGetImplementationService)
+[SUCCESS] 4.2.1 Ensure there's a minimum of a single implementation of the Service Provider.(ServiceProviderTest#testGetServiceProviderImpl)
+[SUCCESS] Must use the BinaryClassifier.BuildingBlock to return an implemented and trained classification model as BinaryClassifier.(ClassifierServiceTest#testCreateBinaryClassifier)
+[SUCCESS] 4.2.1 Must use the ImageClassifier.BuildingBlock to return an implemented and trained classification model as ImageClassifier.(ClassifierServiceTest#testCreateImageClassifier)
+[SUCCESS] 4.2.1 Must be able to return an implementation of the ImageFactory that is able to handle type of BufferedImage.(ImageFactoryServiceTest#testGetBufferedImageImageFactory)
+[SUCCESS] 4.2.1 Must be able to return an Optional after calling getByImageType(...)(ImageFactoryServiceTest#testGetOptionalImageFactory)
+[SUCCESS] 4.2.6.1 Each implementation must be able to return non-null output using an InputStream object as input.(ImageFactoryTest#testGetImageWithInputStreamAsInput)
+[SUCCESS] 4.2.6.1 Each implementation must throw an IOException if the Path input is not an image.(ImageFactoryTest#testGetImageWithInvalidFileInput)
+[SUCCESS] 4.2.6.1 Each implementation must throw an IOException if the InputStream input is not an image.(ImageFactoryTest#testGetImageWithInvalidInputStreamInput)
+[SUCCESS] 4.2.6.1 Each implementation must throw an IOException if the URL input is not an image.(ImageFactoryTest#testGetImageWithInvalidURLInput)
+[SUCCESS] 4.2.6.1 Each implementation must be able to return non-null output using a Path object as input.(ImageFactoryTest#testGetImageWithPathAsInput)
+[SUCCESS] 4.2.6.1 Each implementation must be able to return non-null output using a URL object as input.(ImageFactoryTest#testGetImageWithURLAsInput)
+[SUCCESS] 4.2.1 Must be able to return the name of the implementation which may not be empty nor null.(ImplementationServiceTest#testGetName)
+[SUCCESS] 4.2.1 Must be able to return the version of the implementation which may not be empty nor null.(ImplementationServiceTest#testGetVersion)
+[SUCCESS] 4.2.2.1 Create an ImageClassifier using the building blocks in the builder design pattern.(ImageClassificationTest#testBuildWithBuildingBlock)
+[SUCCESS] 4.2.2.1 Create an ImageClassifier using a Map of configuration key-value which reflect to the methods of the building blocks.(ImageClassificationTest#testBuildWithMapConfiguration)
+[SUCCESS] 4.2.2.1 Creating an ImageClassifier using the Map of configuration key-value which contain invalid value types corresponding to the key. It must throw a InvalidBuilderConfigurationException.(ImageClassificationTest#testBuildWithMapConfigurationWithInvalidValueTypes)
+[SUCCESS] 4.2.2.1 Use a created ImageClassifier to classify MNIST and verify the output formation (not the accuracy). The key must be the label and the value must be the float of accuracy.(ImageClassificationTest#testClassifyPartialMNIST)
+[SUCCESS] 4.2.2.1 Classify input using a BufferedImage object as input for the ImageClassifier.(ImageClassificationTest#testClassifyWithBufferedImageAsInput)
+[SUCCESS] 4.2.2.1 Classify input using a InputStream object as input for the ImageClassifier.(ImageClassificationTest#testClassifyWithInputStreamAsInput)
+[SUCCESS] 4.2.2.1 Attempt to classify input which is not an image and can't be transformed to a BufferedImage using a Path object as input. It must throw a ClassificationException.(ImageClassificationTest#testClassifyWithInvalidInputAsInputStreamInput)
+[SUCCESS] 4.2.2.1 Attempt to classify input which is not an image and can't be transformed to a BufferedImage using a InputStream object as input. It must throw a ClassificationException.(ImageClassificationTest#testClassifyWithInvalidInputAsPathInput)
+[SUCCESS] 4.2.2.2 Create an BinaryClassifier using the building blocks in the builder design pattern.(BinaryClassificationTest#testBuildWithBuildingBlock)
+[SUCCESS] 4.2.2.2 Create an BinaryClassifier using a Map of configuration key-value which reflect to the methods of the building blocks.(BinaryClassificationTest#testBuildWithMapConfiguration)
+[SUCCESS] 4.2.2.2 Creating an BinaryClassifier using the Map of configuration key-value which contain invalid value types corresponding to the key. It must throw a InvalidBuilderConfigurationException.(BinaryClassificationTest#testBuildWithMapConfigurationWithInvalidValueTypes)
+[SUCCESS] 4.2.2.2 Use a created BinaryClassifier to classify SPAM and verify the output. The output must either return true or false.(BinaryClassificationTest#testClassifySpam)
+
+JSR 381 TCK, version 1.0 Summary
+------------------------------------------
+
+TOTAL TESTS EXECUTED : 28
+TOTAL TESTS SKIPPED  : 0
+TOTAL TESTS SUCCESS  : 28
+TOTAL TESTS FAILED   : 0
+
+-- JSR 381 TCK finished --
